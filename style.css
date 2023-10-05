@@ -1,3 +1,33 @@
 :root {
   font-family: Roboto, sans-serif;
 }
+
+body{
+  height: 100vh;
+  width: 100vw;
+}
+
+.container{
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr 6fr;
+  grid-template-columns: 1fr 3.75fr;
+}
+
+.sidebar {
+  background-color: rgba(255,0,0,0.3);
+  grid-row: 1 / 3;
+}
+
+.header {
+  background-color: rgba(0,255,0,0.3); 
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.main-content {
+  background-color: rgba(0, 0, 255, 0.3);  
+  grid-row: 2;
+  grid-column: 2;
+}
