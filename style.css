@@ -5,8 +5,8 @@
   --white-bg-color: rgb(244, 244, 244);
   --gray-bg-color: rgb(238, 238, 238);
   --orange-color: rgb(255, 177, 75);
-  --white-txt-color: white;
-  --black-txt-color:  black;
+  --white-txt-color: rgb(236, 236, 236);
+  --black-txt-color:  rgb(0, 0, 0);
   --gray-txt-color: rgb(143, 143, 143);
 }
 
@@ -26,6 +26,10 @@ a {
 
 body {
   margin: 0;
+}
+
+/* Set black as default text color */
+body * {
   color: var(--black-txt-color)
 }
 
@@ -88,7 +92,7 @@ body {
 
 .header {
   background-color: var(--white-bg-color);
-  padding: 20px 50px;
+  padding: 26px 50px;
   grid-row: 1;
   grid-column: 2;
   display: grid;
@@ -109,6 +113,11 @@ body {
   width: 30px;
 }
 
+.header .icon:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
 .searchbar {
   flex: 1 0 auto;
   display: flex;
@@ -119,7 +128,12 @@ body {
   flex: 1 0 auto;
   max-width: 700px;
   height: 40px;
+  font-size: 1.2rem;
+  padding: 4px 20px;
+  background-color: var(--gray-bg-color);
+  box-shadow: 2px 2px 8px rgb(179, 179, 179);
   border-radius: 20px;
+  border-style: none;
 }
 
 .profile {
@@ -127,12 +141,17 @@ body {
   align-items: center;
   justify-content: flex-end;
   gap: 30px;
-  padding-right: 40px
+  padding-right: 30px
 }
 
 .profile .profile-pic {
   width: 60px;
   border-radius: 50%;
+}
+
+.profile .name {
+  font-size: 1.3rem;
+  font-weight: 600;
 }
 
 .greeting {
@@ -151,10 +170,16 @@ body {
 
 .greeting .text p {
   text-wrap: nowrap;
+  font-weight: 600;
 }
 
-.greeting .text > p {
+.greeting .text p:first-child {
   margin-bottom: 6px;
+  font-size: 18px;
+}
+
+.greeting .text p:last-child {
+  font-size: 28px;
 }
 
 .actions {
@@ -165,10 +190,19 @@ body {
 
 .actions button {
   color: var(--white-txt-color);
+  font-size: 18px;
+  font-weight: 600;
   background-color: var(--blue-bg-color);
   width: 120px;
   height: 50px;
   border-radius: 25px;
+  border: none;
+}
+
+.actions button:hover {
+  cursor: pointer;
+  opacity: 0.9;
+  box-shadow: 2px 2px 6px black;
 }
 
 
