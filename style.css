@@ -155,7 +155,7 @@ button:active {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 30px;
+  gap: 24px;
   padding-right: 30px
 }
 
