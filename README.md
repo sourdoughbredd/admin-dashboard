@@ -10,10 +10,15 @@ This project is a responsive admin dashboard built with HTML and CSS. It feature
 
 <img src="./screenshots/admin-dashboard-page.png" alt="Screenshot of the Admin Dashboard showing the sidebar with navigation links, the header with search and user info and actions, and the main content area with a card layout of projects, announcements, and trending sections." style="max-height: 400px;">
 
+## Preview
+
+You can view a live preview of the page [here](https://sourdoughbredd.github.io/admin-dashboard/).
+
 ## Table of Contents
 
 - [Description](#description)
 - [Screenshot](#screenshot)
+- [Preview](#preview)
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
